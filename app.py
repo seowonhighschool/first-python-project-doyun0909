@@ -1,2 +1,8 @@
-name = input("이름 입력해라: ")
-print(f"{name}님, ATLAS에 오신 것을 환영합니다!")
+import streamlit as st
+ 
+st.title("시일습")
+ 
+name = st.text_input("이름을 입력하세요")
+if name:
+    st.write(f"{name}님 안녕하세요")
+
